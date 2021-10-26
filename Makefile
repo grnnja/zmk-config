@@ -1,5 +1,5 @@
-ZMK_DIR = $(shell readlink -f ~/Documents/git-projects/keyboard/zmk/)
-CONFIG_DIR = $(shell readlink -f ~/Documents/git-projects/keyboard/zmk-config/config/)
+ZMK_DIR = $(shell readlink -f ./zmk/)
+CONFIG_DIR = $(shell readlink -f ./config/)
 BOARD = nrfmicro_11
 SHIELD = prem_dactyl_manuform
 KEYMAP = default
