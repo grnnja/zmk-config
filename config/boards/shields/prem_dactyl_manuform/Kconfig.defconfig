@@ -6,11 +6,10 @@ config ZMK_KEYBOARD_NAME
 
 endif
 
-
 if SHIELD_PREM_DACTYL_MANUFORM_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Dactyl ManuformR"
+	default "Dactyl Manuform"
 
 endif
 
@@ -18,7 +17,7 @@ if SHIELD_PREM_DACTYL_MANUFORM_LEFT || SHIELD_PREM_DACTYL_MANUFORM_RIGHT
 
 config ZMK_SPLIT
 	default y
- 
+
 if ZMK_DISPLAY
 
 config I2C
