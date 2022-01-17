@@ -59,6 +59,14 @@
         ];
         ZEPHYR_TOOLCHAIN_VARIANT = "gnuarmemb";
         GNUARMEMB_TOOLCHAIN_PATH = pkgs.gcc-arm-embedded;
+        shellHook = ''
+          git submodule update --init
+          cd zmk
+          west init -l /app/
+          west update
+          west zephyr-export
+          cd ..
+        '';
       };
     });
 }
